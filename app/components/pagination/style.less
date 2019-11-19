@@ -1,0 +1,67 @@
+.pagination {
+  .pagination__total {
+    padding-right: 5px;
+  }
+  .pagination__sizes {
+    white-space: nowrap;
+    padding: 2px 5px;
+    color: #48576a;
+    display: inline-block;
+    button {
+      min-width: 36px;
+      height: 36px;
+      padding: 0 10px;
+      background: #fff;
+      border: 1px solid rgb(224, 224, 224);
+      display: inline-block;
+      cursor: pointer;
+      &.disabled {
+        color: #e4e4e4;
+        background-color: transparent;
+        cursor: not-allowed;
+      }
+      &.btn-prev {
+        border-radius: 5px 0 0 5px;
+        border-right: 0;
+      }
+      &.btn-next {
+        border-radius: 0 5px 5px 0;
+      }
+    }
+    .page {
+      vertical-align: top;
+      display: inline-block;
+      li {
+        padding: 0 4px;
+        font-size: 13px;
+        min-width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: #fff;
+        border: solid 1px rgb(224, 224, 224);
+        border-right: 0;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        &.active {
+          background-color: rgb(255, 207, 113);
+          border-color: rgb(232, 181, 81);
+          border: solid 1px rgb(232, 181, 81);
+          cursor: default;
+        }
+        &.more {
+          background: none;
+          position: relative;
+          &::before {
+            content: "...";
+            transform: translate(-50%,-60%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+          }
+        }
+      }
+    }
+  }
+}

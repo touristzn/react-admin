@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DiaLog /> renders correctly 1`] = `
+<div
+  className="popup-box"
+>
+  <div
+    className="dialog-win"
+  >
+    <header>
+      <h1>
+        dialog
+      </h1>
+      <button
+        onClick={
+          [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+      >
+        Close
+      </button>
+    </header>
+    <div
+      className="dialog-win_content"
+    >
+      内容...
+    </div>
+    <footer>
+      <Button
+        key="0"
+        label="cancel"
+        onClick={[MockFunction]}
+      />
+      <Button
+        key="1"
+        label="save"
+        onClick={[MockFunction]}
+        type="disabled"
+      />
+    </footer>
+  </div>
+</div>
+`;

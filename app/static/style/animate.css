@@ -1,0 +1,28 @@
+.slideInDown {
+  animation: slideInDown 1s ease both;
+}
+.slideOutUp {
+  animation: slideOutUp .5s ease both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}

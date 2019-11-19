@@ -1,0 +1,111 @@
+@import "./variable.less";
+
+@w: calc(~'100% - 200px');
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .header {
+    width: @w;
+    font-size: 14px;
+    text-align: right;
+    padding: 20px 40px 10px 0;
+    background: rgba(250,249,248, .5);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    &_lang {
+      padding-right: 25px;
+      display: inline-block;
+      span {
+        font-size: 13px;
+        position: relative;
+        cursor: pointer;
+        .sc-bdVaJa {
+          margin-left: 5px;
+          vertical-align: middle;
+        }
+        ul {
+          width: 150px;
+          text-align: left;
+          position: absolute;
+          top: 25px;
+          left: 0;
+          li {
+            padding: 3px 0;
+            a {
+              font-size: 12px;
+              line-height: 22px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .left-nav {
+    width: 200px;
+    height: 100vh;
+    color: @color-text-w;
+    background: @color-bg;
+    overflow-y: scroll;
+    .exit {
+      text-align: center;
+      padding: 30px 0;
+    }
+    .nav-list {
+      padding:10px 0 20px;
+      &_title {
+        padding: 8px 16px;
+        line-height: 24px;
+        font-size: @font-size-small-t;
+        font-weight: bold;
+        color: @color-text-w;
+        display: block;
+      }
+      ul {
+        li {
+          a {
+            color: @color-text-w;
+            line-height: 30px;
+            padding-left: 28px;
+            display: block;
+            &.active {
+              color: #ffb525;
+              background:  rgba(0,0,0,.4);
+            }
+            &:hover {
+              background: rgba(0,0,0,.4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-page {
+    width: @w;
+    max-height: 100vh;
+    padding: 30px 35px 60px;
+    background: @color-page-bg;
+    position: relative;
+    overflow-y: scroll; 
+    .page_header {
+      h2 {
+        color: #252729;
+        font-size: 36px;
+        font-weight: 600;
+      }
+    }
+    .pagination {
+      text-align: center;
+    }
+    .no-found {
+      padding-top: 20px;
+    }
+  }
+}

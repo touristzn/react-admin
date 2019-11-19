@@ -1,0 +1,168 @@
+import { __ } from './i18n';
+
+// 菜单配置
+export default [
+  {
+    title: __('运营管理'),
+    children: [
+      {
+        title: __('动态'),
+        path: '/feeds',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'product_manager',
+          'engineer',
+        ],
+      },
+      {
+        title: __('公司邀请码'),
+        path: '/invitation-code',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'area_manager',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'events_and_partnerships',
+          'product_manager',
+          'engineer',
+        ],
+      },
+      {
+        title: __('验证码'),
+        path: '/verCode',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'area_manager',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'events_and_partnerships',
+          'product_manager',
+          'engineer',
+        ],
+      },
+      {
+        title: __('权限管理'),
+        path: '/authority',
+        filterRoles: ['super_admin', 'admin_associate', 'engineer'],
+      },
+      {
+        title: __('会员管理'),
+        path: '/member',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'area_manager',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'events_and_partnerships',
+          'product_manager',
+          'engineer',
+        ],
+      },
+      {
+        title: __('闪座用户查询'),
+        path: '/gouser',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'area_manager',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'events_and_partnerships',
+          'product_manager',
+          'engineer',
+        ],
+      },
+    ],
+  },
+  {
+    title: __('FAPIAO.MENU'),
+    children: [
+      {
+        title: __('FAPIAO_PROFILE.MENU'),
+        path: '/fapiao_profile',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'finance_associate',
+          'finance_superuser',
+          'engineer',
+        ],
+      },
+      {
+        title: __('FAPIAO_REQUEST.MENU'),
+        path: '/fapiao_request',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'community_manager',
+          'community_lead',
+          'community_specialist',
+          'community_associate',
+          'community_services_associate',
+          'finance_associate',
+          'finance_superuser',
+          'engineer',
+        ],
+      },
+      {
+        title: __('FAPIAO_DASHBOARD.MENU'),
+        path: '/fapiao_dashboard',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'finance_associate',
+          'finance_superuser',
+          'engineer',
+        ],
+      },
+    ],
+  },
+  {
+    title: __('ENTITY_LOCATION.ENTITY_LOCATION'),
+    children: [
+      {
+        title: __('ENTITY_LOCATION.ENTITY'),
+        path: '/entities',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'finance_associate',
+          'finance_superuser',
+          'engineer',
+        ],
+      },
+      {
+        title: __('ENTITY_LOCATION.LOCATION'),
+        path: '/locations',
+        filterRoles: [
+          'super_admin',
+          'admin_associate',
+          'finance_associate',
+          'finance_superuser',
+          'engineer',
+        ],
+      },
+    ],
+  },
+];

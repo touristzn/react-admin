@@ -1,0 +1,44 @@
+.table-list {
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  overflow-x: auto;
+  table {
+    border: solid 1px #EAEBEC;
+    th, td {
+      padding: 10px;
+      word-break: break-all;
+      span {
+        margin-right: 5px;
+      }
+      &.fixed {
+        position: sticky;
+        right: 0;
+      }
+    }
+    th {
+      font-size: 13px;
+      font-weight: bold;
+      background: #fafafa;
+      height: 40px;
+      border-right: solid 1px #eee;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    td {
+      background: #fff;
+      line-height: 26px;
+      border-top: solid 1px #EAEBEC;
+      a {
+        color: #5499c3;
+      }
+    }
+  }
+  .btn {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

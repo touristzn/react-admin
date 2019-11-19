@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> renders correctly 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="hasIcon"
+    onChange={[Function]}
+    placeholder="请输入内容"
+    type="text"
+    value=""
+  />
+</div>
+`;

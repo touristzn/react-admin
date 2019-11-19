@@ -1,0 +1,36 @@
+.nav-tabs {
+  padding: 14px 0 0 14px;
+  border-bottom: 1px solid #dbdbdb;
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      height: 38px;
+      line-height: 38px;
+      padding: 0 15px;
+      color: #252729;
+      background-color: rgba(255,207,113,.05);
+      border: 1px solid #dbdbdb;
+      border-right: 0;
+      border-radius: 0;
+      position: relative;
+      bottom: -1px;
+      &.active {
+        background: #faf9f8;
+        border-bottom: 1px solid #faf9f8;
+      }
+    }
+
+    &:first-child {
+      a {
+        border-radius: 3px 0 0 0;
+      }
+    }
+    &:last-child {
+      a {
+        border-radius: 0px 3px 0 0;
+        border-right: 1px solid #dbdbdb;
+      }
+    }
+  }
+}

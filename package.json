@@ -1,0 +1,145 @@
+{
+  "name": "china-spacestation",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WeConnect/china-spacestation"
+  },
+  "license": "MIT",
+  "scripts": {
+    "i18n": "node script/i18n-download.js",
+    "dev": "cross-env NODE_ENV=development APP_ENV=dev node --max_old_space_size=4096 build/server/dev.js",
+    "deploy-ut": "cross-env NODE_ENV=development APP_ENV=ut node --max_old_space_size=4096 build/server/prod.js",
+    "deploy-staging": "cross-env NODE_ENV=production APP_ENV=staging  webpack --config build/webpack.prod.config.js -p --colors",
+    "deploy-prod": "cross-env NODE_ENV=production APP_ENV=prod  webpack --config build/webpack.prod.config.js -p --colors",
+    "test": "jest --colors"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.4.3",
+    "@koa/cors": "^3.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "cache-loader": "^2.0.1",
+    "chalk": "^2.4.2",
+    "clean-webpack-plugin": "^0.1.17",
+    "colors": "^1.3.3",
+    "compression-webpack-plugin": "^1.1.11",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.8",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
+    "es3ify-webpack-plugin": "0.0.1",
+    "es6-promise": "^4.2.4",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-intl": "^1.1.2",
+    "file-loader": "^3.0.1",
+    "happypack": "^5.0.0-beta.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "i18n-s": "^1.1.0",
+    "i18n-service-tool": "^1.1.3",
+    "identity-obj-proxy": "^3.0.0",
+    "install": "^0.12.2",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "js-base64": "^2.5.1",
+    "jsdom-worker": "^0.1.0",
+    "jsonp": "^0.2.1",
+    "jsx-loader": "^0.13.2",
+    "koa": "^2.0.0-alpha.8",
+    "koa-body": "^2.6.0",
+    "koa-connect-history-api-fallback": "^0.3.1",
+    "koa-onerror": "^4.1.0",
+    "koa-rewrite": "^3.0.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "koa-webpack-middleware": "^1.0.7",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "mini-css-extract-plugin": "^0.5.0",
+    "moment": "^2.24.0",
+    "npm": "^6.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "ora": "^3.4.0",
+    "os": "^0.1.1",
+    "postcss": "^6.0.16",
+    "postcss-loader": "^2.0.10",
+    "postcss-preset-env": "^6.6.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "qs": "^6.7.0",
+    "rc-calendar": "^9.12.4",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-hot-loader": "^3.1.3",
+    "react-ionicons": "^3.0.1",
+    "string-replace-loader": "^2.1.1",
+    "style-loader": "^0.19.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^5.0.0",
+    "reflux": "^6.4.1"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/jest.setup.js"
+    ],
+    "testURL": "http://localhost/",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(enzyme|jest)/)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy",
+      "^@/(.*)": "<rootDir>/app/$1",
+      "^tests/(.*)": "<rootDir>/tests/$1"
+    },
+    "coverageThreshold": {
+      "global": {
+        "lines": 46
+      }
+    },
+    "globals": {
+      "SERVER_API_BASEURL": false,
+      "SERVER_API_SECRET": false,
+      "SERVER_API_APPID": false
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

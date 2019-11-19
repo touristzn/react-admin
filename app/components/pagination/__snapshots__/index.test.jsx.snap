@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> renders correctly 1`] = `
+<Component
+  className="mt-20"
+  currentChange={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          4,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  currentPage={1}
+  pageSize={20}
+  total={140}
+>
+  <Pagination
+    __={[Function]}
+    className="mt-20"
+    currentChange={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            4,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    currentPage={1}
+    pageSize={20}
+    total={140}
+  >
+    <div
+      className="pagination mt-20"
+    >
+      <span
+        className="pagination__total"
+      >
+        共
+         
+        140
+         
+        条
+      </span>
+      <div
+        className="pagination__sizes"
+      >
+        <button
+          className="btn-prev disabled"
+          onClick={[Function]}
+        >
+          上一页
+        </button>
+        <ul
+          className="page"
+        >
+          <li
+            className="active"
+            onClick={[Function]}
+          >
+            1
+          </li>
+          <li
+            className=""
+            key="2"
+            onClick={[Function]}
+          >
+            2
+          </li>
+          <li
+            className=""
+            key="3"
+            onClick={[Function]}
+          >
+            3
+          </li>
+          <li
+            className=""
+            key="4"
+            onClick={[Function]}
+          >
+            4
+          </li>
+          <li
+            className=""
+            key="5"
+            onClick={[Function]}
+          >
+            5
+          </li>
+          <li
+            className=""
+            key="6"
+            onClick={[Function]}
+          >
+            6
+          </li>
+          <li
+            className=""
+            onClick={[Function]}
+          >
+            7
+          </li>
+        </ul>
+        <button
+          className="btn-next "
+          onClick={[Function]}
+        >
+          下一页
+        </button>
+      </div>
+    </div>
+  </Pagination>
+</Component>
+`;
