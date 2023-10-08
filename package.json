@@ -79,7 +79,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "ora": "^3.4.0",
     "os": "^0.1.1",
-    "postcss": "^6.0.16",
+    "postcss": "^8.4.31",
     "postcss-loader": "^2.0.10",
     "postcss-preset-env": "^6.6.0",
     "progress-bar-webpack-plugin": "^1.12.1",
