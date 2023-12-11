@@ -22,7 +22,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime-corejs2": "^7.4.3",
-    "@koa/cors": "^3.0.0",
+    "@koa/cors": "^5.0.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
